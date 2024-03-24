@@ -1,4 +1,5 @@
 {
     "env": "dev",
+    "db_con_str": "sqlite:///./sql_app.db",
     "storage_account_connect_string": ""
 }

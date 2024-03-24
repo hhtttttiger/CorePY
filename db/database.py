@@ -14,7 +14,7 @@ class Database:
 
     def execute_query(self, sql, params=None):
         with self.engine.connect() as conn:
-            result = conn.execute(sql, params)
+            result = conn.execute(text(sql), params)
             return result
 
     def execute_insert(self, sql, params=None):
@@ -25,10 +25,10 @@ class Database:
 
     def execute_update(self, sql, params=None):
         with self.engine.connect() as conn:
-            result = conn.execute(sql, params)
+            result = conn.execute(text(sql), params)
             return result.rowcount
 
     def execute_delete(self, sql, params=None):
         with self.engine.connect() as conn:
-            result = conn.execute(sql, params)
+            result = conn.execute(text(sql), params)
             return result.rowcount
