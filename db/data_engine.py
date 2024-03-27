@@ -7,7 +7,6 @@ config = load_config()
 SQLALCHEMY_DATABASE_URL = config["db_con_str"]
 
 
-# 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
 )
