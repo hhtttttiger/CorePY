@@ -10,3 +10,4 @@
 - 接口鉴权
 - 整合了SqlAlchemy作为ORM
 - 提供了dockerfile可以直接部署到服务器上
+- 整合了auzre store、azure key vault，做.net的朋友会喜欢
